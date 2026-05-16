@@ -7,20 +7,20 @@ class Ezer < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/alexjlennard/ezer-guardians/releases/download/v0.1.0-alpha.3/ezer-darwin-arm64.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      sha256 "c6255e2f78f637744c0169d92fd5aabb8a57d29e5eb3bf0f126e4a82e2029e08"
     else
       url "https://github.com/alexjlennard/ezer-guardians/releases/download/v0.1.0-alpha.3/ezer-darwin-x64.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      sha256 "94a38543b4b0466932768b8281742d42355487d1472d97af0f483728ba15a229"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/alexjlennard/ezer-guardians/releases/download/v0.1.0-alpha.3/ezer-linux-arm64.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      sha256 "7823f258e64ea47d1394317971a0ea9464ab3f309f263e6371d8ad27a569a77b"
     else
       url "https://github.com/alexjlennard/ezer-guardians/releases/download/v0.1.0-alpha.3/ezer-linux-x64.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      sha256 "44639f9bf4439b5b3f30b88d2a5e20f709f75912e66518cc940398dda463c2c8"
     end
   end
 
