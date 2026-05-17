@@ -6,25 +6,25 @@ class Ezer < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422188436",
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422191126",
           headers: ["Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
-      sha256 "4a57ce2a21e1178761e29303157c283a2569d8b033c1af04675b4cfb55c54fcb"
+      sha256 "f06d42ffff06acbb808f89a6c8d038213cc0a14135111bfaf7a1dcdda6278e54"
     else
-      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422188357",
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422191113",
           headers: ["Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
-      sha256 "e4b0f2e0392fef8e5c414b4e314c49d7d52d0d43102f341db3ab86344b0d50a9"
+      sha256 "bf522f388a5cfcfc41abea986478e8164f6f9e3fc8b9da79615c0d6597ec0b81"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422188364",
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422191118",
           headers: ["Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
-      sha256 "e3d63750897c95e74c2b68d2f3a683ab6c798f2ec4c0250b5a064c6cffd21f3a"
+      sha256 "08c6367b3a092e6772ee4fb641e4abee10f4d029598c165974ed9c7b4df888e0"
     else
-      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422188358",
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422191107",
           headers: ["Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
-      sha256 "9d9ea091b41cdc7bd759391fd7ae0291fc33f564de9e3ab9fa85bf33b80e8683"
+      sha256 "5db8c2f12f6f8ff95156d1aa8eeecc1805be82287d8b47f211cb442b27761415"
     end
   end
 
