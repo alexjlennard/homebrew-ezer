@@ -1,26 +1,30 @@
 class Ezer < Formula
   desc "AI-powered code guardian platform"
   homepage "https://github.com/alexjlennard/ezer-guardians"
-  version "0.1.0-alpha.3"
+  version "0.1.0-alpha.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/alexjlennard/ezer-guardians/releases/download/v0.1.0-alpha.3/ezer-darwin-arm64.tar.gz"
-      sha256 "c6255e2f78f637744c0169d92fd5aabb8a57d29e5eb3bf0f126e4a82e2029e08"
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422186859",
+          headers: ["Authorization: token \#{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
+      sha256 "a29b0454d57e8435c7a504af9887f13fc49b57bd6a480bea82f3a332e104cc05"
     else
-      url "https://github.com/alexjlennard/ezer-guardians/releases/download/v0.1.0-alpha.3/ezer-darwin-x64.tar.gz"
-      sha256 "94a38543b4b0466932768b8281742d42355487d1472d97af0f483728ba15a229"
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422186908",
+          headers: ["Authorization: token \#{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
+      sha256 "5de448b6aaa632e9c3cd759ba976acacce3c2921ed6a77408183c6589c3a50d5"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/alexjlennard/ezer-guardians/releases/download/v0.1.0-alpha.3/ezer-linux-arm64.tar.gz"
-      sha256 "7823f258e64ea47d1394317971a0ea9464ab3f309f263e6371d8ad27a569a77b"
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422186844",
+          headers: ["Authorization: token \#{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
+      sha256 "96beeda73bbc990566163160f4e03b9a155a32ed671184723e6aa65fb89dd18e"
     else
-      url "https://github.com/alexjlennard/ezer-guardians/releases/download/v0.1.0-alpha.3/ezer-linux-x64.tar.gz"
-      sha256 "44639f9bf4439b5b3f30b88d2a5e20f709f75912e66518cc940398dda463c2c8"
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422186864",
+          headers: ["Authorization: token \#{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
+      sha256 "3ef3b118f0e0e8c38a69905d2c3ed43c5311302deb962054ccf3cc7e3a989efb"
     end
   end
 
