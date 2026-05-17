@@ -6,25 +6,25 @@ class Ezer < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422193702",
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422231640",
           headers: ["Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
-      sha256 "2ec02e613956e7d7dd037ca8b6a058b729797929a9d8490b5373338daebdedd1"
+      sha256 "91d5ad87cc51b3ee39067d4e8aa9a48bdf808961fe60e2af942de1f1a3723d4e"
     else
-      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422193731",
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422231626",
           headers: ["Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
-      sha256 "0e650493166823d25de1fe8a9aaa333f9cc60f8994ab6bdd8a3d4072536c4293"
+      sha256 "5509344a4311f4afd5f8abee35ca6fb207f7931331ef1f947b6a075305584fd9"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422193788",
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422231617",
           headers: ["Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
-      sha256 "f5b98de67b10796ba0aebcef0898f8da6b9e4a37c452745bf2d743625d4635db"
+      sha256 "fed69fa90cd2f41508468cc87f9484a9f014816c96afe1818f6e37ec663d0ff5"
     else
-      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422193796",
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422231579",
           headers: ["Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
-      sha256 "7742d8d18abd10e280e5174052d4b799fa118ab491a6bbc0e0671f5fe851637d"
+      sha256 "bacc5af4c9b89335ca8af2ef1aca316ee3033f57c19fa39e8f061a87c24d4981"
     end
   end
 
