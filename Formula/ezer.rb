@@ -6,25 +6,25 @@ class Ezer < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422191126",
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422193702",
           headers: ["Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
-      sha256 "f06d42ffff06acbb808f89a6c8d038213cc0a14135111bfaf7a1dcdda6278e54"
+      sha256 "2ec02e613956e7d7dd037ca8b6a058b729797929a9d8490b5373338daebdedd1"
     else
-      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422191113",
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422193731",
           headers: ["Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
-      sha256 "bf522f388a5cfcfc41abea986478e8164f6f9e3fc8b9da79615c0d6597ec0b81"
+      sha256 "0e650493166823d25de1fe8a9aaa333f9cc60f8994ab6bdd8a3d4072536c4293"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422191118",
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422193788",
           headers: ["Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
-      sha256 "08c6367b3a092e6772ee4fb641e4abee10f4d029598c165974ed9c7b4df888e0"
+      sha256 "f5b98de67b10796ba0aebcef0898f8da6b9e4a37c452745bf2d743625d4635db"
     else
-      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422191107",
+      url "https://api.github.com/repos/alexjlennard/ezer-guardians/releases/assets/422193796",
           headers: ["Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}", "Accept: application/octet-stream"]
-      sha256 "5db8c2f12f6f8ff95156d1aa8eeecc1805be82287d8b47f211cb442b27761415"
+      sha256 "7742d8d18abd10e280e5174052d4b799fa118ab491a6bbc0e0671f5fe851637d"
     end
   end
 
